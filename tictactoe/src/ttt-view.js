@@ -6,10 +6,34 @@ class View {
 
   bindEvents() {
     let $li = $('li');
-    let pos = $li.data('position');
+
+    $li.on('click', (e) => {
+      let pos = $(e.currentTarget).data('position');
+      try {
+        this.game.playMove(pos);
+      } catch(err) {
+        alert('Invalid move!');
+      } finally {
+
+        this.makeMove($(e.currentTarget));
+      }
+
+      if (this.game.isOver()) {
+        this.$el.append(`<h2>You win, ${this.game.currentPlayer}!!</h2>`);
+      }
+
+    });
   }
 
-  makeMove($square) {}
+  makeMove($square) {
+    $square.addClass('clicked');
+    $square.html(this.game.currentPlayer);
+    if (this.game.currentPlayer === 'x') {
+      $square.addClass('x');
+    } else {
+      $square.addClass('o');
+    }
+  }
 
   setupBoard() {
     let $ul = $('<ul></ul>');
@@ -20,7 +44,7 @@ class View {
         let $li = $('<li></li>');
         $ul.append($li);
 
-        $li.attr('position', [i, j]);
+        $li.data('position', [i, j]);
       }
     }
   }

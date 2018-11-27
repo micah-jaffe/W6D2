@@ -7,5 +7,7 @@ const Game = require('../backend/game.js');
     console.log(game);
     console.log(view);
     view.setupBoard();
+    view.bindEvents();
+    game.run();
 
   });

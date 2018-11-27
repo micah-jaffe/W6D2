@@ -4,19 +4,33 @@ ul {
   width: 600px;
   flex-wrap: wrap;
   list-style-type: none;
-
 }
 
 li {
-    background: grey;
-    border: 10px solid black;
-    padding: 50px;
-    width: 200px;
-    box-sizing: border-box;
-
+  background: grey;
+  border: 10px solid black;
+  padding: 50px;
+  width: 200px;
+  box-sizing: border-box;
 }
 
 li:hover{
   background: yellow;
   cursor: pointer;
+}
+
+.clicked {
+  background: white;
+  font-size: 80px;
+  font-weight: 700;
+  margin: auto;
+  text-align: center;
+}
+
+.x {
+  color: red;
+}
+
+.o {
+  color: blue;
 }
