@@ -1,0 +1,22 @@
+ul {
+  display: flex;
+  margin: auto;
+  width: 600px;
+  flex-wrap: wrap;
+  list-style-type: none;
+
+}
+
+li {
+    background: grey;
+    border: 10px solid black;
+    padding: 50px;
+    width: 200px;
+    box-sizing: border-box;
+
+}
+
+li:hover{
+  background: yellow;
+  cursor: pointer;
+}
