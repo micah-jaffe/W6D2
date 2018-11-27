@@ -1,0 +1,41 @@
+/* PHASE 9: Forms */
+.form {
+  background: lightgray;
+  padding: 20px;
+  float: right;
+  border-radius: 8px;
+  width: 500px;
+}
+
+.content-main .thumb{
+  float: left;
+
+}
+
+.input input, .input textarea {
+  background: white;
+  border-radius: 8px;
+}
+
+.input input:focus, .input textarea:focus {
+  background: white;
+  border: 10px solid green;
+  border-radius: 5px;
+}
+
+.submit input {
+  background: green;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.cancel:hover {
+  color: red;
+  font-weight: 700;
+}
+
+.submit input:hover {
+  background: darkgreen;
+
+}
