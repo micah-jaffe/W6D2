@@ -1,0 +1,42 @@
+.toh {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  justify-content: center;
+  border-bottom: 10px solid blue;
+  width: 200px;
+  padding: 0px;
+  align-items: center;
+}
+
+li {
+  background: gray;
+  padding: 20px 50px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.small {
+  width: 20px;
+}
+
+li:hover {
+  cursor: pointer;
+  background: lightgrey;
+}
+
+.medium {
+  width: 50px;
+}
+
+.big {
+  width: 100px;
+}
